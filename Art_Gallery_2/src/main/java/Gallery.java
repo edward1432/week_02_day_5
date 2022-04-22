@@ -41,9 +41,11 @@ public class Gallery {
     }
 
     public boolean sellArt(Artwork artwork){
+        System.out.println("Till balance: " + till);
         if (collection.contains(artwork)) {
             this.collection.remove(artwork);
-            till =+ artwork.getPrice();
+            till += artwork.getPrice();
+            System.out.println("Till balance: " + till);
             return true;
         } return false;
     }

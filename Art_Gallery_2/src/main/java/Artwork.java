@@ -41,4 +41,14 @@ public class Artwork {
     public void setNft(String nft) {
         this.nft = nft;
     }
+
+    @Override
+    public String toString() {
+        return "Artwork{" +
+                "title='" + title + '\'' +
+                ", artist='" + artist + '\'' +
+                ", price=" + price +
+                ", nft='" + nft + '\'' +
+                '}';
+    }
 }
